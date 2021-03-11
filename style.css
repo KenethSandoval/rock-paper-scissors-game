@@ -1,0 +1,113 @@
+:root {
+  --RadialGradient: hsl(214, 47%, 23%), hsl(237, 49%, 15%);
+  --ScissorsGradient: hsl(39, 89%, 49%), hsl(40, 84%, 53%);
+  --PaperGradient: hsl(230, 89%, 62%), hsl(230, 89%, 65%);
+  --RockGradient: hsl(349, 71%, 52%), hsl(349, 70%, 56%);
+  --LizardGradient: hsl(261, 73%, 60%), hsl(261, 72%, 63%);
+  --Cyan: hsl(189, 59%, 53%),hsl(189, 58%, 57%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, var(--RadialGradient)); 
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+header {
+  border: 3px solid rgba(255, 255,255, .29);
+  border-radius: 20px;
+  width: 50%;
+  margin: 10px auto;
+  /*Flex*/
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px 25px;
+}
+
+.score {
+  background-color: white;
+  border-radius: 8px;
+  /*Flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 65px;
+}
+
+.score h2 {
+  letter-spacing: 1.5px;
+  color: hsl(229, 64%, 46%);
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.score h3 {
+  font-size: 50px;
+  color: hsl(229, 25%, 31%);
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+  background: url("images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 350px;
+}
+
+.image-triangle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0px 7px 1px rgba(0, 0, 0, .2);
+  background-color: white;
+  transition: transform .5s ease;
+}
+
+.item:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#rock {
+  border: 20px solid #D94169;
+}
+
+#paper {
+  border: 20px solid #F2AB27;
+}
+
+#scissors {
+  border: 20px solid #577EF2;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 22px;
+  }
+  
+  small {
+    font-size: 16px;
+  }
+  p {
+    font-size: 60px;
+  }
+}
