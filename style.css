@@ -87,6 +87,158 @@ main {
   cursor: pointer;
 }
 
+.input {
+  color: hsl(229, 25%, 31%);
+  width: 65px;
+}
+
+.selected-option {
+  margin: 30px 0px;
+  display: none;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#selected {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 30px;
+}
+
+#selected h5 {
+  font-size: 22px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0px 0px;
+}
+
+.img-option-user {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0px 7px 1px rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.img-option-bot {
+  margin: 20px 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0px 7px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.img-option-disabled {
+  margin:20px 40px;
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background-color: rgb(19, 19, 37);
+}
+
+.result {
+  display: none;
+  text-align: center;
+  margin: 0px 50px;
+}
+
+.result h3 {
+  font-size: 48px;
+  color: white;
+  margin: 20px 0px;
+}
+
+.result button {
+  width: 180px;
+  padding: 10px 0px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  color: hsl(229, 64%, 46%);
+  font-size: 16px;
+}
+
+.result button:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.result button:focus {
+  outline: none;
+}
+
+.rules {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 120px;
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+}
+
+.rules:hover {
+  cursor: pointer;
+  background-color: hsl(216, 16%, 31%);
+}
+
+.rules h4 {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.rules-menu {
+  position: absolute;
+  z-index: 20;
+  background-color: white;
+  width: 600px;
+  height: 450px;
+  left: calc(50vw - 300px);
+  top: calc(50vh - 224px);
+  border-radius: 15px;
+  padding: 35px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  grid-template-rows: 80px 1fr;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+
+.rules-menu h5 {
+  color: hsl(229, 25%, 31%);
+  font-size: 30px;
+}
+
+.rules-menu img[alt="rules image"] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+}
+
+#btn-close-menu {
+  transition: transform 1s ease;
+}
+
+#btn-close-menu:hover {
+  cursor: pointer;
+  transform: rotateZ(180deg);
+}
+
 #rock {
   border: 20px solid #D94169;
 }

@@ -18,11 +18,11 @@
     
     <div class="score">
       <h2>score</h2>
-      <h3 id="score"></h3>
+      <h3 class="score-text">0</h3>
     </div> 
   </header>
   
-  <main>
+  <main class="main">
     <div class="image-triangle">
       <div class="item" id="paper">
         <img src="images/icon-paper.svg" alt="paper" class="input">
@@ -36,6 +36,41 @@
     </div>
   </main>
 
+  <!-- SELECTED SECTION -->
+  <section class="selected-option">
+    <div class="user-select" id="selected">
+      <h5>YOU PICKED</h5>
+      <div class="img-option-user" id="">
+        <img src="" alt="user option" class="input"> 
+      </div>
+    </div>
+
+    <div class="result" style="display: none">
+      <h3>YOU LOSE</h3>
+      <button class="btn-play">PLAY AGAIN</button>
+    </div>
+
+    <div class="bot-select" id="selected">
+      <h5>THE HOUSE PICKED</h5>
+
+      <div class="img-option-bot" id="">
+        <img src="" alt="house picked" class="input">
+      </div>
+
+      <div class="img-option-disabled"></div>
+    </div>
+  </section>
+
+  <!-- RULES SECTION -->
+  <div class="rules">
+    <h4>RULES</h4>
+  </div>
+
+  <div class="rules-menu">
+    <h5 id="block-menu">RULES</h5>
+    <img src="images/icon-close.svg" alt="icon close" id="btn-close-menu">
+    <img src="images/image-rules.svg" alt="rules image">
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
